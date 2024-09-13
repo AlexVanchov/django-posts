@@ -38,3 +38,6 @@ cover/
 .env
 env/
 env.bak/
+
+# Others
+*.DS_Store
