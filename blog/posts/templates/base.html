@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Django App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'common/css/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'common/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'common/css/pagination.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header Menu -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="{% url 'post_list' %}">
+                    <img src="{% static 'common/images/solar_edge_logo.svg' %}" alt="Logo" class="logo-img">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Django App</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Paginator Styles */
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.step-links {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-links a {
+    color: rgb(255, 134, 134);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step-links a:hover {
+    background-color: rgb(251, 95, 95);
+    color: #fff;
+}
+
+.step-links .current {
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #2c3e50;
+    border-radius: 5px;
+    margin: 0 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-links a[disabled],
+.step-links .current {
+    pointer-events: none;
+    background-color: #bdc3c7;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .step-links a,
+    .step-links .current {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
