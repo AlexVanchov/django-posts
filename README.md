@@ -1,4 +1,7 @@
 # Django Posts
+## Demo
+
+[Open link](https://alexvanchov.pythonanywhere.com/)
 
 ## Overview
 This app interacts with the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
@@ -10,12 +13,28 @@ This app interacts with the [JSONPlaceholder API](https://jsonplaceholder.typico
 
 ## Setup
 
+### Using Docker
+
+1. Build the Docker image:
+    ```bash
+    docker build -t django-posts .
+    ```
+
+2. Run the Docker container:
+    ```bash
+    docker run -d -p 8000:8000 django-posts
+    ```
+
+3. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to see the app.
+
+### OR Local Instance
+
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Run the server:
+3. Run the server:
     ```bash
     python manage.py runserver
     ```
