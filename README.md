@@ -46,7 +46,3 @@ To run tests for the "posts" app:
 ```bash
 python manage.py test posts
 ```
-
-```bash
-python manage.py runserver
-```
